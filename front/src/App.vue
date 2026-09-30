@@ -51,41 +51,48 @@ const tariffs = [
   {
     meetings: '1',
     title: 'ПЕРВАЯ ВСТРЕЧА',
-    price: '1.000 ₽',
+    price: '1.250 ₽',
     discount: '50%',
-    saving: '1.000 ₽',
+    saving: '1.250 ₽',
     total: '1.000 ₽',
-    oldTotal: '2.000 ₽'
+    oldTotal: '2.500 ₽'
   },
-
+  {
+    meetings: '1',
+    title: '1 ВСТРЕЧА',
+    price: '2.500 ₽',
+    discount: '0%',
+    saving: '0 ₽',
+    total: '2.500 ₽',
+    oldTotal: '-'
+  },
   {
     meetings: '5',
     title: '5 ВСТРЕЧ',
-    price: '1.000 ₽',
-    discount: '50%',
-    saving: '1.000 ₽',
-    total: '5.000 ₽',
-    oldTotal: '10.000 ₽'
+    price: '2.000 ₽',
+    discount: '20%',
+    saving: '500 ₽',
+    total: '10.000 ₽',
+    oldTotal: '12.500 ₽'
   },
-
   {
     meetings: '10',
     title: '10 ВСТРЕЧ',
-    price: '750 ₽',
-    discount: '62,5%',
-    saving: '1.250 ₽',
-    total: '7.500 ₽',
-    oldTotal: '20.000 ₽'
+    price: '1.500 ₽',
+    discount: '40%',
+    saving: '1.000 ₽',
+    total: '15.000 ₽',
+    oldTotal: '25.000 ₽'
   },
 
   {
-    meetings: '20',
-    title: '20 ВСТРЕЧ',
-    price: '500 ₽',
-    discount: '75%',
-    saving: '1.500 ₽',
-    total: '10.000 ₽',
-    oldTotal: '40.000 ₽'
+    meetings: '> 10',
+    title: 'СВОЕ КОЛ-ВО ВСТРЕЧ',
+    price: '-',
+    discount: '-',
+    saving: '-',
+    total: 'свяжитесь со мной для обсуждения цены',
+    oldTotal: ''
   }
 ]
 
@@ -240,7 +247,7 @@ onBeforeUnmount(() => observer?.disconnect())
         </div>
 
         <div class="tariff-note">
-          Базовая цена одной встречи — 2.000 ₽.<br>
+          Базовая цена одной встречи — 2.500 ₽.<br>
           Первая встреча — со скидкой 50%.
         </div>
 

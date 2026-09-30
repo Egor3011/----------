@@ -8,3 +8,18 @@ services:
     ports:
       - "${HTTP_PORT:-80}:80"
     restart: unless-stopped
+
+  tgbot:
+    profiles: [bot]
+    build:
+      context: ./tgbot
+    env_file:
+      - ./tgbot/.env
+    environment:
+      DATABASE_PATH: /app/data/bot.sqlite3
+    volumes:
+      - bot-data:/app/data
+    restart: unless-stopped
+
+volumes:
+  bot-data:

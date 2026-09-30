@@ -1,0 +1,6 @@
+*
+!Dockerfile
+!requirements.txt
+!config.py
+!storage.py
+!main.py

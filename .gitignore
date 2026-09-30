@@ -1,0 +1,10 @@
+.DS_Store
+**/.env
+**/.env.*
+!**/.env.example
+**/.venv/
+**/__pycache__/
+**/*.pyc
+tgbot/data/
+**/node_modules/
+**/dist/
