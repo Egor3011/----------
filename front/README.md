@@ -15,6 +15,24 @@ Production:
 npm run build
 ```
 
+## Запуск на Ubuntu через Docker
+
+Установите Docker Engine и плагин Docker Compose. Из корня репозитория выполните:
+
+```bash
+docker compose up -d --build
+```
+
+Сайт будет доступен по адресу `http://IP_СЕРВЕРА/`. Если на сервере включён UFW, откройте порт: `sudo ufw allow 80/tcp`.
+
+Для другого HTTP-порта задайте `HTTP_PORT`, например:
+
+```bash
+HTTP_PORT=8080 docker compose up -d --build
+```
+
+После изменения фронтенда повторите `docker compose up -d --build`. Остановить сайт можно командой `docker compose down`.
+
 ## Реализовано
 
 - Vue 3 + Vite.
