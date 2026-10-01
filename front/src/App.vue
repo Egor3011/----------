@@ -135,7 +135,6 @@ onBeforeUnmount(() => observer?.disconnect())
     <header class="header reveal">
       <div class="brand">
         <div class="brand__name">Воробьев Никита</div>
-        <div class="brand__subtitle">Психологическая помощь</div>
       </div>
     </header>
 
@@ -253,7 +252,7 @@ onBeforeUnmount(() => observer?.disconnect())
 
         <a
           class="booking-button"
-          href="#contacts"
+          href="t.me/NVorobev_bot"
         >
           Записаться
         </a>
@@ -291,6 +290,8 @@ onBeforeUnmount(() => observer?.disconnect())
         </div>
         <a href="https://t.me/h010dok" target="_blank" rel="noopener noreferrer">@h010dok</a>
         <a class="rules" href="#rules" @click.prevent>Правила пользования сайтом</a>
+        <p>Воробьев Никита Алексеевич</p>
+        <p>ИНН 325003696178</p>
       </div>
     </footer>
   </div>
