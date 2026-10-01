@@ -54,7 +54,7 @@ const tariffs = [
     price: '1.250 ₽',
     discount: '50%',
     saving: '1.250 ₽',
-    total: '1.000 ₽',
+    total: '1.250 ₽',
     oldTotal: '2.500 ₽'
   },
   {
@@ -283,15 +283,18 @@ onBeforeUnmount(() => observer?.disconnect())
       <h2>Социальные сети</h2>
 
       <div class="footer__links">
-        <a href="https://t.me/h010dok" target="_blank" rel="noopener noreferrer">ТГК:</a>
+        <div class="contact-row">
+          <a href="https://t.me/h010dok">ТГК:</a>
+          <span>@h010dok</span>
+        </div>
         <div class="contact-row">
           <a href="tel:+79605472151">Контакт:</a>
           <span>+7(960)547-21-51</span>
         </div>
         <a href="https://t.me/h010dok" target="_blank" rel="noopener noreferrer">@h010dok</a>
         <a class="rules" href="#rules" @click.prevent>Правила пользования сайтом</a>
-        <p>Воробьев Никита Алексеевич</p>
-        <p>ИНН 325003696178</p>
+        <a>Воробьев Никита Алексеевич</a>
+        <a>ИНН 325003696178</a>
       </div>
     </footer>
   </div>
