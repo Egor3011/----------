@@ -252,7 +252,7 @@ onBeforeUnmount(() => observer?.disconnect())
 
         <a
           class="booking-button"
-          href="t.me/NVorobev_bot"
+          href="https://t.me/NVorobev_bot"
         >
           Записаться
         </a>
