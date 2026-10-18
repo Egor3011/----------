@@ -283,8 +283,7 @@ onBeforeUnmount(() => observer?.disconnect())
 
       <div class="footer__links">
         <div class="contact-row">
-          <a href="https://t.me/h010dok">ТГК:</a>
-          <span>@h010dok</span>
+          <a href="https://t.me/NikitaVorobew">ТГК: NikitaVorobew</a>
         </div>
         <div class="contact-row">
           <a href="tel:+79605472151">Контакт:</a>
